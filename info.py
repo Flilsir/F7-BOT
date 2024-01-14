@@ -17,7 +17,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
-PICS = (environ.get('PICS' ,'https://drive.google.com/file/d/1-1FPk7AfEpEJiJhEf5y2DFeyL1hEfqna/view?usp=drivesdk.https://drive.google.com/file/d/1-21fiBuPeN_o5Np4iaMwSEZrYweu_J0a/view?usp=drivesdk')).split()
+PICS = (environ.get('PICS' ,'https://drive.google.com/file/d/1')).split()
 UPTIME = time.time()
 
 # Admins, Channels & Users
@@ -32,7 +32,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://f7filterdb:f7filterdb@cluster0.kxld2v2.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
