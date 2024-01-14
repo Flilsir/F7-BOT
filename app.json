@@ -5,7 +5,6 @@
     "keywords": ["Telegram", "auto-filter", "MrMKN"],
     "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
     "env": {
- MOVIESOFK": {
             "description": "True/False if your server is web support required? the value is True else False",
             "value": "True",
             "required": true
